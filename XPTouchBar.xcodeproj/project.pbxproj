@@ -7,17 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D67297EB0F9E0FCC00CFD1FA /* XPTouchBar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D67297EA0F9E0FCC00CFD1FA /* XPTouchBar.cpp */; };
-		D6A7BDAA16A1DEA200D1426A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A7BDA916A1DEA200D1426A /* OpenGL.framework */; };
+		8344B704285F32D500F4EB01 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8344B703285F32D500F4EB01 /* AppKit.framework */; };
+		8344B707285F338200F4EB01 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344B706285F338200F4EB01 /* Main.swift */; };
+		8344B709286099CD00F4EB01 /* TouchBarIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344B708286099CD00F4EB01 /* TouchBarIdentifiers.swift */; };
+		8344B70B2860B42700F4EB01 /* MyTouchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344B70A2860B42700F4EB01 /* MyTouchBar.swift */; };
 		D6A7BDC116A1DEC000D1426A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A7BDC016A1DEC000D1426A /* CoreFoundation.framework */; };
 		D6A7BDF116A1DED200D1426A /* XPLM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A7BDF016A1DED200D1426A /* XPLM.framework */; };
 		D6A7BDF316A1DED200D1426A /* XPWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6A7BDF216A1DED200D1426A /* XPWidgets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8344B703285F32D500F4EB01 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8344B705285F338200F4EB01 /* XPTouchBar-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XPTouchBar-Bridging-Header.h"; sourceTree = "<group>"; };
+		8344B706285F338200F4EB01 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		8344B708286099CD00F4EB01 /* TouchBarIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchBarIdentifiers.swift; sourceTree = "<group>"; };
+		8344B70A2860B42700F4EB01 /* MyTouchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTouchBar.swift; sourceTree = "<group>"; };
 		D607B19909A556E400699BC3 /* XPTouchBar.xpl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = XPTouchBar.xpl; sourceTree = BUILT_PRODUCTS_DIR; };
-		D67297EA0F9E0FCC00CFD1FA /* XPTouchBar.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XPTouchBar.cpp; sourceTree = "<group>"; };
-		D6A7BDA916A1DEA200D1426A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		D6A7BDC016A1DEC000D1426A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D6A7BDF016A1DED200D1426A /* XPLM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XPLM.framework; path = SDK/Libraries/Mac/XPLM.framework; sourceTree = "<group>"; };
 		D6A7BDF216A1DED200D1426A /* XPWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XPWidgets.framework; path = SDK/Libraries/Mac/XPWidgets.framework; sourceTree = "<group>"; };
@@ -28,8 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A7BDAA16A1DEA200D1426A /* OpenGL.framework in Frameworks */,
 				D6A7BDC116A1DEC000D1426A /* CoreFoundation.framework in Frameworks */,
+				8344B704285F32D500F4EB01 /* AppKit.framework in Frameworks */,
 				D6A7BDF116A1DED200D1426A /* XPLM.framework in Frameworks */,
 				D6A7BDF316A1DED200D1426A /* XPWidgets.framework in Frameworks */,
 			);
@@ -41,7 +46,10 @@
 		AC4E46B809C2E0B3006B7E1B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D67297EA0F9E0FCC00CFD1FA /* XPTouchBar.cpp */,
+				8344B706285F338200F4EB01 /* Main.swift */,
+				8344B705285F338200F4EB01 /* XPTouchBar-Bridging-Header.h */,
+				8344B708286099CD00F4EB01 /* TouchBarIdentifiers.swift */,
+				8344B70A2860B42700F4EB01 /* MyTouchBar.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -66,8 +74,8 @@
 		D6A7BDAD16A1DEA700D1426A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8344B703285F32D500F4EB01 /* AppKit.framework */,
 				D6A7BDC016A1DEC000D1426A /* CoreFoundation.framework */,
-				D6A7BDA916A1DEA200D1426A /* OpenGL.framework */,
 				D6A7BDF016A1DED200D1426A /* XPLM.framework */,
 				D6A7BDF216A1DED200D1426A /* XPWidgets.framework */,
 			);
@@ -100,6 +108,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D607B19809A556E400699BC3 = {
+						LastSwiftMigration = 1340;
+					};
+				};
 			};
 			buildConfigurationList = D607B16209A5563100699BC3 /* Build configuration list for PBXProject "XPTouchBar" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -127,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D67297EB0F9E0FCC00CFD1FA /* XPTouchBar.cpp in Sources */,
+				8344B70B2860B42700F4EB01 /* MyTouchBar.swift in Sources */,
+				8344B709286099CD00F4EB01 /* TouchBarIdentifiers.swift in Sources */,
+				8344B707285F338200F4EB01 /* Main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +174,6 @@
 				DYLIB_COMPATIBILITY_VERSION = "";
 				DYLIB_CURRENT_VERSION = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
 				EXECUTABLE_EXTENSION = xpl;
 				FRAMEWORK_SEARCH_PATHS = "$(XPSDK_ROOT)/Libraries/Mac";
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -188,7 +202,7 @@
 					"$(HEADER_SEARCH_PATHS)",
 				);
 				MACH_O_TYPE = mh_bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
@@ -262,7 +276,7 @@
 					"$(HEADER_SEARCH_PATHS)",
 				);
 				MACH_O_TYPE = mh_bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				OTHER_LDFLAGS = (
 					"$(OTHER_LDFLAGS)",
 					"-Wl,-exported_symbol",
@@ -286,9 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = XPTouchBar;
+				SWIFT_OBJC_BRIDGING_HEADER = "XPTouchBar-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
@@ -297,9 +315,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				PRODUCT_NAME = XPTouchBar;
+				SWIFT_OBJC_BRIDGING_HEADER = "XPTouchBar-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;
